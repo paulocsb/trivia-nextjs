@@ -1,0 +1,99 @@
+{
+  "questions": [
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital of France?",
+      "correctAnswer": "Paris",
+      "options": ["Paris", "London", "Rome", "Berlin"]
+    },
+    {
+      "category": "Literature",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who wrote the novel '1984'?",
+      "correctAnswer": "George Orwell",
+      "options": [
+        "George Orwell",
+        "Aldous Huxley",
+        "Ray Bradbury",
+        "J.D. Salinger"
+      ]
+    },
+    {
+      "category": "Science",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the chemical symbol for gold?",
+      "correctAnswer": "Au",
+      "options": ["Au", "Ag", "Pb", "Fe"]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who was the first president of the United States?",
+      "correctAnswer": "George Washington",
+      "options": [
+        "George Washington",
+        "Thomas Jefferson",
+        "Abraham Lincoln",
+        "John Adams"
+      ]
+    },
+    {
+      "category": "Sports",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "correctAnswer": "France",
+      "options": ["France", "Croatia", "Brazil", "Germany"]
+    },
+    {
+      "category": "Entertainment",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who played Jack Dawson in the movie 'Titanic'?",
+      "correctAnswer": "Leonardo DiCaprio",
+      "options": ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp", "Tom Cruise"]
+    },
+    {
+      "category": "Technology",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What year was the first iPhone released?",
+      "correctAnswer": "2007",
+      "options": ["2007", "2005", "2008", "2009"]
+    },
+    {
+      "category": "Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which band released the album 'The Dark Side of the Moon'?",
+      "correctAnswer": "Pink Floyd",
+      "options": ["Pink Floyd", "The Beatles", "Led Zeppelin", "Queen"]
+    },
+    {
+      "category": "Politics",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the current president of the United States in 2024?",
+      "correctAnswer": "Joe Biden",
+      "options": ["Joe Biden", "Donald Trump", "Barack Obama", "Kamala Harris"]
+    },
+    {
+      "category": "Art",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who painted the Mona Lisa?",
+      "correctAnswer": "Leonardo da Vinci",
+      "options": [
+        "Leonardo da Vinci",
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet"
+      ]
+    }
+  ]
+}
