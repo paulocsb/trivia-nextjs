@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import React, { useEffect, useState } from 'react'
-import Score from '@/components/score'
-import Question from '@/components/question'
-import Loading from '@/components/loading'
-import { useQuestions } from '@/context/questionContext'
-import { Button } from '@/components/ui/button'
+import React, { useEffect, useState } from "react";
+import Score from "@/components/score";
+import Question from "@/components/question";
+import Loading from "@/components/loading";
+import { useQuestions } from "@/context/questionContext";
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
@@ -13,9 +13,9 @@ import {
   DrawerDescription,
   DrawerFooter,
   DrawerHeader,
-  DrawerTitle
-} from "@/components/ui/drawer"
-import { cn } from '@/lib/utils'
+  DrawerTitle,
+} from "@/components/ui/drawer";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   const { questions, fetchQuestions } = useQuestions();
@@ -45,7 +45,7 @@ export default function Home() {
   }, [questions, fetchQuestions]);
 
   const handleNextQuestion = () => {
-    setCurrentQuestionIndex(prevIndex => prevIndex + 1);
+    setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
 
     if (currentQuestionIndex < questions.length - 1) {
       setShowNextButton(false);
@@ -57,7 +57,7 @@ export default function Home() {
   };
 
   if (isLoading || isDelayLoading) {
-    return <Loading />
+    return <Loading />;
   }
 
   const handleAnswer = (answer: string) => {
@@ -87,8 +87,8 @@ export default function Home() {
   };
 
   return (
-    <div className={cn('min-h-screen')}>
-      <div className={cn('w-full mx-auto max-w-2xl mt-4 py-4 text-center')}>
+    <div className={cn("min-h-screen")}>
+      <div className={cn("w-full mx-auto max-w-2xl mt-4 py-4 text-center")}>
         <Score
           currentQuestionIndex={currentQuestionIndex}
           numTotalQuestions={questions.length}
@@ -106,34 +106,32 @@ export default function Home() {
         )}
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerContent>
-            <DrawerHeader className={cn('mx-auto')}>
-              <DrawerTitle className={cn('scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center')}>
-                Woo-hoo!!! 🎉
+            <DrawerHeader className={cn("mx-auto")}>
+              <DrawerTitle
+                className={cn(
+                  "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center"
+                )}
+              >
+                🎉 Woo-hoo!!!
               </DrawerTitle>
-              <DrawerDescription className={cn('scroll-m-20 text-2xl tracking-tight lg:text-2xl text-center')}>
-                You completed the Trivia, see your score!
+              <DrawerDescription
+                className={cn(
+                  "scroll-m-20 text-2xl tracking-tight lg:text-2xl text-center"
+                )}
+              >
+                You completed the Trivia!
               </DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>
-              <div className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
-                ⭐️ {currentScore * 10} points
-              </div>
-              <div className="flex justify-center scroll-m-20 leading-7 tracking-tight [&:not(:first-child)]:mt-6 py-4 text-center vaul-scrollable">
-                <div className="rounded-md border p-4 w-[350px]">
-                  <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                    📈 Estatistics
-                  </h4>
-                  <p>{currentScore} correct answers out of {questions.length} questions</p>
-                </div>
+              <div className={cn("scroll-m-20 tracking-tight text-center")}>
+                <p className={cn("text-4xl lg:text-5xl")}>🏆</p>
+                <p className={cn("text-center p-4 text-lg font-semibold")}>
+                  You scored {currentScore} out of {questions.length}
+                </p>
               </div>
               <DrawerClose asChild>
-                <div className={cn('mx-auto text-center')}>
-                  <Button
-                    variant={'secondary'}
-                    onClick={restartGame}
-                  >
-                    Play again
-                  </Button>
+                <div className={cn("mx-auto text-center")}>
+                  <Button onClick={restartGame}>Play again</Button>
                 </div>
               </DrawerClose>
             </DrawerFooter>
@@ -141,5 +139,5 @@ export default function Home() {
         </Drawer>
       </div>
     </div>
-  )
+  );
 }
