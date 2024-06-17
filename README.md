@@ -1,5 +1,12 @@
 # Trivia NextJS
 
+<p align="left">
+  <img height="150" alt="image" src="https://github.com/paulocsb/trivia-nextjs/assets/6982718/d6e133b9-6e40-4d9f-845e-3b831b3361c8">
+  <img height="150" alt="image" src="https://github.com/paulocsb/trivia-nextjs/assets/6982718/2efe1762-f644-4713-ba13-c0c9b14f60c0">
+  <img height="150" alt="image" src="https://github.com/paulocsb/trivia-nextjs/assets/6982718/d8008490-1bc8-4d77-866d-079adda0757a">
+  <img height="150" alt="image" src="https://github.com/paulocsb/trivia-nextjs/assets/6982718/cffc2139-f14a-4fb9-b83d-877067fc85ea">
+</p>
+
 A basic trivia application built with Next.js, Tailwind CSS, and TypeScript. This app fetches trivia questions from a local `db.json` file using the `json-server` npm library. It is intended for learning development purposes, providing an engaging way to test your knowledge across various topics.
 
 ## Table of Contents
