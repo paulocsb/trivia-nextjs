@@ -1,24 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trivia NextJS
 
-## Getting Started
+A basic trivia application built with Next.js, Tailwind CSS, and TypeScript. This app fetches trivia questions from a local `db.json` file using the `json-server` npm library. It is intended for learning development purposes, providing an engaging way to test your knowledge across various topics.
 
-First, run the development server:
+## Table of Contents
 
-```bash
+- [Trivia NextJS](#trivia-nextjs)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Steps](#steps)
+  - [Usage](#usage)
+    - [Running the Project](#running-the-project)
+  - [Learn More](#learn-more)
+  - [Deploy on Vercel](#deploy-on-vercel)
+
+## Introduction
+
+This Trivia app provides multiple-choice questions on topics such as geography, literature, history, science, sports, etc. It features randomized answer options for each question and immediate feedback on the correctness of answers.
+
+## Features
+
+- Multiple categories.
+- Randomized answer options for each question.
+- Immediate feedback on the correctness of answers.
+- Simple and responsive user interface using Tailwind CSS.
+- State management with React hooks.
+
+## Installation
+
+### Prerequisites
+
+- Node
+- npm
+- json-server
+
+### Steps
+
+1. Clone the repository:
+    ```sh
+    git clone git@github.com:paulocsb/trivia-nextjs.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd trivia-nextjs
+    ```
+
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+4. Install `json-server` globally:
+    ```sh
+    npm install -g json-server
+    ```
+
+5. Start the `json-server`:
+    ```sh
+    json-server --watch db/db.json --port 3004
+    ```
+
+## Usage
+
+### Running the Project
+
+To start the development server, run:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
