@@ -18,9 +18,16 @@
       }
     ],
     "paths": {
-      "@/*": ["./*", "./context/*"],
+      "@/*": ["./*", "./context/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/context/*.tsx", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/context/*.tsx",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "pages/api/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

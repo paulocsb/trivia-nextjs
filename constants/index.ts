@@ -1,1 +1,1 @@
-export const TRIVIA_API_URL = 'http://localhost:3004/questions';
+export const TRIVIA_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
