@@ -27,7 +27,8 @@
     "**/context/*.tsx",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "pages/api/*.ts"
+    "pages/api/*.ts",
+    "server.js"
   ],
   "exclude": ["node_modules"]
 }

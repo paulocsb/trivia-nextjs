@@ -10,10 +10,12 @@ const nextConfig = {
         dgram: false,
         canvas: false,
       };
+    } else {
+      config.externals = ["json-server", ...config.externals];
     }
 
     return config;
-  }
+  },
 };
 
 export default nextConfig;
